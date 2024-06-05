@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeff3;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  padding-left: 40vw;
+}
+
+.button {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  gap: 3rem;
+}
+.button:nth-child(1) .activated .round {
+  background-color: #a14850;
+}
+.button:nth-child(1) .activated .skel {
+  background-color: #a77d83;
+}
+.button:nth-child(2) .activated .round {
+  background-color: #80c265;
+}
+.button:nth-child(2) .activated .skel {
+  background-color: #88a97a;
+}
+.button:nth-child(3) .activated .round {
+  background-color: #6583c5;
+}
+.button:nth-child(3) .activated .skel {
+  background-color: #7b8aac;
+}
+
+.round {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  background-color: #d2d1d1;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.skel {
+  background-color: #8e8e8e;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 2rem;
+}
+
+.activated .round {
+  left: 6rem;
+  transition: 1s;
+}
+
+footer {
+  padding: 0 5rem;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+footer > div {
+  display: flex;
+  gap: 3rem;
+}
+footer img {
+  height: 6rem;
+}/*# sourceMappingURL=App.css.map */
